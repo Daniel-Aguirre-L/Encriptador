@@ -1,4 +1,7 @@
 
+::-webkit-scrollbar {
+    display: none;
+}
 body{
     min-height: 90vh;
     background-color: #F3F5FC;
@@ -114,13 +117,14 @@ main .output #text2{
     text-align: center;
     color: #495057;
 } 
-main .output .resultado-texto{
+main .output #resultado{
+    border: none;
+    outline: none;
+    resize: none;
     font-size: 24px;
     line-height: 36px;
     color: #495057;
-    margin-bottom: 32px;
-    flex: 1;
-    width: 100%;
+    flex: 0.9;
 }
 main .output .btncopiar{
     margin-top: 10%;

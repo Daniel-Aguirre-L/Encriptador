@@ -7,6 +7,7 @@ function encriptar() {
     var inputtext = inputtext.replace(/u/img, "ufat");
 
     document.getElementById("resultado").innerHTML = inputtext;
+    document.getElementById("resultado").style.display = ""
     document.getElementById("imgr").style.display = "none";
     document.getElementById("text1").style.display = "none";
     document.getElementById("text2").style.display = "none";
@@ -24,6 +25,9 @@ function desencriptar() {
     var inputtext = inputtext.replace(/ufat/img, "u");
 
     document.getElementById("resultado").innerHTML = inputtext;
+    document.getElementById("imgr").style.display = "none";
+    document.getElementById("text1").style.display = "none";
+    document.getElementById("text2").style.display = "none";
     document.getElementById("boton-copiar").style.display = "show";
     document.getElementById("boton-copiar").style.display = "inherit";
     
