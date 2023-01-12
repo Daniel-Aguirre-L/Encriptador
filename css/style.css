@@ -126,7 +126,7 @@ main .output #resultado{
     color: #495057;
     flex: 0.9;
 }
-main .output .btncopiar{
+main .output #btncopiar{
     margin-top: 10%;
     width: 70%;
     height: 7%;

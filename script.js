@@ -5,15 +5,12 @@ function encriptar() {
     var inputtext = inputtext.replace(/i/img, "imes");
     var inputtext = inputtext.replace(/a/img,"ai");
     var inputtext = inputtext.replace(/u/img, "ufat");
-
     document.getElementById("resultado").innerHTML = inputtext;
     document.getElementById("resultado").style.display = ""
     document.getElementById("imgr").style.display = "none";
     document.getElementById("text1").style.display = "none";
     document.getElementById("text2").style.display = "none";
-    document.getElementById("boton-copiar").style.display = "show";
-    document.getElementById("boton-copiar").style.display = "inherit";
-    
+    document.getElementById("btncopiar").style.display = "inline";  
 }
 
 function desencriptar() {
@@ -23,18 +20,15 @@ function desencriptar() {
     var inputtext = inputtext.replace(/imes/img, "i");
     var inputtext = inputtext.replace(/ai/img,"a");
     var inputtext = inputtext.replace(/ufat/img, "u");
-
     document.getElementById("resultado").innerHTML = inputtext;
     document.getElementById("imgr").style.display = "none";
     document.getElementById("text1").style.display = "none";
     document.getElementById("text2").style.display = "none";
-    document.getElementById("boton-copiar").style.display = "show";
-    document.getElementById("boton-copiar").style.display = "inherit";
-    
+    document.getElementById("btncopiar").style.display = "inline";
 }
 
 function copiar () {
-    var contenido =document.querySelector("output");
+    var contenido =document.getElementById("resultado");
     contenido.select();
     document.execCommand("copy");
 }

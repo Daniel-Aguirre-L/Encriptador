@@ -38,10 +38,10 @@
                         <p id="text1">Ningun mensaje fue encontrado</p>
                         <p id="text2">Ingrese el texto que desees encriptar o desencriptar</p>
                         <textarea id="resultado" readonly="readonly"></textarea>
-                        <button type="button" class="btncopiar">Copiar</button>
+                        <button type="button" id="btncopiar">Copiar</button>
                 </div>
-            </div>
-            
+
+            </div> 
         </main>
 
     </body>
@@ -51,9 +51,8 @@
         btn.onclick = encriptar;
         var btn2 = document.querySelector (".btndes");
         btn2.onclick = desencriptar;
-        var btn3 = document.querySelector (".btncopiar");
+        var btn3 = document.getElementById ("btncopiar");
         btn3.onclick = copiar;
-
     </script>
 
 </html>
