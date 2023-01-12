@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html lang="es">
+    
+    <head>
+        <meta charset="UTF-8"> 
+        <title>Encriptador</title>
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap">
+        <script type="text/javascript" src="script.js"></script>
+    </head>
+
+    
+    <body>
+    
+        <main>
+            <div class="logo">
+                <img class="logo" src="imagenes/logo-alura.png" alt="logo de alura">
+            </div>
+
+            <div class="input">
+                <textarea class= "inputtxt" id= "inputtext") placeholder="Ingrese el texto aquí"></textarea>
+                <div>
+                    <img  class= "sign" src="imagenes/sgnadmiracion.png"  alt="signo de admiracion">
+                    <p>Solo minusculas y sin acentos</p>
+                </div>
+                <div class="button">
+                    <button type="button" class="btnenc">Encriptar!</button>
+                    <button type="button" class="btndes">Desencriptar!</button>
+                </div>
+
+            </div>
+                <div class="output">
+                    <div class="container">
+                        <img id="imgr" src="imagenes/muneco.png"  alt="niño con lupa" > 
+                        <p id="text1">Ningun mensaje fue encontrado</p>
+                        <p id="text2">Ingrese el texto que desees encriptar o desencriptar</p>
+                        <p class="resultado" id="resultado" class="resultado-texto hidden"></p>
+                        <button type="button" class="btncopiar">Copiar</button>
+                </div>
+            </div>
+            
+        </main>
+
+    </body>
+    
+    <script>
+        var btn = document.querySelector (".btnenc");
+        btn.onclick = encriptar;
+        var btn2 = document.querySelector (".btndes");
+        btn2.onclick = desencriptar;
+        var btn3 = document.querySelector (".btncopiar");
+        btn3.onclick = copiar;
+
+    </script>
+
+</html>
