@@ -9,7 +9,6 @@
         <link rel="stylesheet" href="css/style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap">
-        <script type="text/javascript" src="script.js"></script>
     </head>
 
     
@@ -21,14 +20,14 @@
             </div>
 
             <div class="input">
-                <textarea class= "inputtxt" id= "inputtext") placeholder="Ingrese el texto aquí"></textarea>
+                <textarea class= "inputtxt" id= "inputtext" placeholder="Ingrese el texto aquí"></textarea>
                 <div>
                     <img  class= "sign" src="imagenes/sgnadmiracion.png"  alt="signo de admiracion">
                     <p>Solo minusculas y sin acentos</p>
                 </div>
                 <div class="button">
-                    <button type="button" class="btnenc">Encriptar!</button>
-                    <button type="button" class="btndes">Desencriptar!</button>
+                    <button disabled type="button" class="btnenc" id="btnenc">Encriptar!</button>
+                    <button disabled type="button" class="btndes" id="btndes">Desencriptar!</button>
                 </div>
 
             </div>
@@ -50,13 +49,6 @@
 
     </body>
     
-    <script>
-        var btn = document.querySelector (".btnenc");
-        btn.onclick = encriptar;
-        var btn2 = document.querySelector (".btndes");
-        btn2.onclick = desencriptar;
-        var btn3 = document.getElementById ("btncopiar");
-        btn3.onclick = copiar;
-    </script>
+    <script src="./script.js"></script>
 
 </html>

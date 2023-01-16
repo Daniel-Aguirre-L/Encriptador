@@ -72,6 +72,7 @@ main .input .button{
     font-size: 16px;
     padding: 12px;
     cursor: pointer;
+    pointer-events: none;
     transition: .2s all;
 }
 .btndes{
@@ -82,8 +83,21 @@ main .input .button{
     background-color: #D8DFE8;
     font-size: 16px;
     padding: 12px;
+    pointer-events: none;
     cursor: pointer;
     transition: .2s all;
+}
+.btnenc:hover {
+    background-color: #032957;
+}
+.btnenc:active {
+    transform: scale(.95);
+}
+.btndes:hover {
+    background-color: #bbc8d8;
+}
+.btndes:active {
+    transform: scale(.95);
 }
 main .output{
     flex: 0.4;
@@ -146,6 +160,7 @@ footer {
     align-items: center;
 }
 footer p {
+    font-size: 14px;
     color: #0A3871;
 }
 footer p a {
