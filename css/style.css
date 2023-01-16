@@ -170,23 +170,6 @@ footer p a {
 }
 
 /* @Media queries */
-@media screen and (max-width: 635px) {
-    main .output #imgr {
-        display: none;
-    }
-    main {
-        flex-direction: column;
-    }
-    main .output #btncopiar{
-        margin-top: auto;
-        height: 30%;
-        width: 40%;
-    }
-    main .input .button{
-        flex-direction: row;
-    }
-    
-}
 @media screen and (min-width: 768px) {
     body {
         padding: 20px 60px 0 40px;
@@ -219,4 +202,19 @@ footer p a {
         gap: 80px;
     }
 }
-
+@media screen and (max-width: 635px) {
+    main .output #imgr {
+        display: none;
+    }
+    main {
+        flex-direction: column;
+    }
+    main .output #btncopiar{
+        margin-top: auto;
+        height: 30%;
+        width: 40%;
+    }
+    main .input .button{
+        flex-direction: row;
+    }
+}
