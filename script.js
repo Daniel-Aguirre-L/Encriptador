@@ -2,9 +2,9 @@ var btn = document.getElementById("btnenc");
 var btn2 = document.getElementById("btndes");
 var btn3 = document.getElementById("btncopiar");
 var texto = document.getElementById("inputtext")
-texto.addEventListener("input", detectarInput);
+texto.addEventListener("input", detectarInput); //Registra el evento cuando se escribe en la caja de texto
 
-
+//Permite la funcionalidad del click
 window.onload = function(){
     this.click();
 }
@@ -12,7 +12,8 @@ function click(){
     btn.onclick = encriptar;
     btn2.onclick = desencriptar;
     btn3.onclick = copiar;
-}
+} 
+//Funciones de los botones
 function encriptar() {
     let texto = document.getElementById("inputtext").value.toLowerCase();
     let inputtext = texto.replace(/e/img, "enter");
@@ -20,10 +21,10 @@ function encriptar() {
     inputtext = inputtext.replace(/i/img, "imes");
     inputtext = inputtext.replace(/a/img,"ai");
     inputtext = inputtext.replace(/u/img, "ufat");
-    inputtext = inputtext.normalize('NFD').replace(/[\u0300-\u036f]/g,"");
+    inputtext = inputtext.normalize('NFD').replace(/[\u0300-\u036f]/g,""); // Quita los acentos.
     document.getElementById("resultado").innerHTML = inputtext;
     document.getElementById("resultado").style.display = ""
-    document.getElementById("imgr").style.display = "none";
+    document.getElementById("imgr").style.display = "none"; //Desvanece los elementos de la derecha para msotrar el resultado
     document.getElementById("text1").style.display = "none";
     document.getElementById("text2").style.display = "none";
     document.getElementById("btncopiar").style.display = "inline";  
@@ -47,6 +48,7 @@ function copiar () {
     contenido.select();
     document.execCommand("copy");
 }
+// Detecta cuando se copia texto y los botones.
 function activarBotones () {
     btn.disabled = false;
     btn.style.pointerEvents = 'auto';
