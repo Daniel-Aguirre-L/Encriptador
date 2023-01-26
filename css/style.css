@@ -45,6 +45,7 @@ main .input textarea{
    height: 18px;
    width: 18px;
    vertical-align: bottom;
+   margin-left: 4px;
 }
 main .input p{
     color: #495057;
@@ -215,5 +216,7 @@ footer p a {
     }
     main .input .button{
         flex-direction: row;
+        width: 90%;
+        margin-left: 15px;
     }
 }
